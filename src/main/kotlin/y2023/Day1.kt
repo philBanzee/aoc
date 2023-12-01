@@ -1,3 +1,5 @@
+package y2023
+
 import java.io.File
 
 fun solveFirst(): Int {
