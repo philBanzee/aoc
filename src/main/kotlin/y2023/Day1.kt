@@ -3,7 +3,7 @@ package y2023
 import java.io.File
 
 fun solveFirst(): Int {
-    val input = File("src/main/resources/day1input").readLines()
+    val input = File("src/main/resources/y2023/day1input").readLines()
 
     return input.fold(0) { sum, current ->
         val first = current.find { it.isDigit() }
@@ -13,7 +13,7 @@ fun solveFirst(): Int {
 }
 
 fun solveSecond(): Int {
-    val input = File("src/main/resources/day1input").readLines()
+    val input = File("src/main/resources/y2023/day1input").readLines()
 
     val validDigits = mapOf("one" to 1, "two" to 2, "three" to 3, "four" to 4, "five" to 5, "six" to 6, "seven" to 7, "eight" to 8, "nine" to 9)
 
