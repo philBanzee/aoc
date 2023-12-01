@@ -42,7 +42,7 @@ class Day2 {
             Pair(Option.SCISSORS, Option.ROCK)        -> Result.WIN
             Pair(Option.SCISSORS, Option.PAPER)       -> Result.LOSE
             Pair(Option.SCISSORS, Option.SCISSORS)    -> Result.DRAW
-            else -> Result.LOSE
+            else -> error("Unhandled case: $pair")
         }
     }
 
