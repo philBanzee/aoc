@@ -1,6 +1,7 @@
 package y2022
 
 import java.io.File
+import java.nio.file.Paths
 
 enum class Option  {
     ROCK, PAPER, SCISSORS
@@ -11,7 +12,7 @@ enum class Result {
 }
 
 class Day2 {
-    private val rawInput = File("src/main/resources/y2022/day2input").readLines()
+    private val rawInput = Paths.get("src/main/resources/y2022/day2input").toFile().readLines()
 
     private val oppOptions = mapOf('A' to Option.ROCK, 'B' to Option.PAPER, 'C' to Option.SCISSORS)
 

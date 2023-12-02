@@ -1,8 +1,8 @@
 package y2022
 
-import java.io.File
+import java.nio.file.Paths
 
-fun readInput(): List<String> = File("src/main/resources/y2022/day1input").readLines()
+fun readInput(): List<String> = Paths.get("src/main/resources/y2022/day1input").toFile().readLines()
 
 fun summedCalories(): List<Int> {
     val results: MutableList<Int> = mutableListOf()
